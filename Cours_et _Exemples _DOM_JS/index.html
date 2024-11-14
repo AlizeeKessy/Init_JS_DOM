@@ -1,28 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>Exemple DOM</title>
-    <script>
-        function testerRadio() {
-            var radio = document.getElementsByName("btnRadChoix");
-            for (var i = 0; i < radio.length; i++) {
-                if (radio[i].checked) {
-                    document.getElementById("txtBox1").value
-                    = radio[i].value;
-                }
-            }
-        }
-    </script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+
 </head>
 
 <body>
-    <form name="frmChoix">
-        <input type="radio" name="btnRadChoix" value="semaine" checked="checked" /> Semaine
-        <br />
-        <input type="radio" name="btnRadChoix" value="week end" /> Week-end
-        <br />
-        <input type="button" name="btn" value="Choix" on-click="testerRadio();" />
-        <br />
-        <input id="txtBox1" type="text" name="txtChoix" va- lue="" />
-    </form>
+    <h1>Titre Principal</h1>
+    <p id="p1" class="blue">Un paragraphe <span>avec un span</span></p>
+    <div>
+        <p id="p2">un paragraphe dans le div</p>
+        <p>Un autre paragraphe dans le div</p>
+    </div>
+    <p>Un autre paragraphe</p>
+    <p id="vide"></p>
+    <script src="script/script.js"></script>
 </body>
 
 </html>
