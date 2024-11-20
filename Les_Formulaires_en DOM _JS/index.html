@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+   <form action="" id="form1" onSubmit="return checkForm(this);">
+        <h2>Intercepte la validation du formulaire</h2>
+        <form id="form1" name="form1" onSubmit="return checkForm(this);">
+            <input type="text" name="nom" value="Dupont" />
+            <input type="text" name="prenom" value="Eric" />
+            <input type="submit" id="idSubForm1" name="subForm1" value="Connection" />
+        </form>    
+         <!--01 -->
+    <form name="form3">
+        <input type="radio" name="choix" value="1" />Choix numéro 1
+        <br />
+        <input type="radio" name="choix" value="2" />Choix numéro 2
+        <br />
+        <input type="radio" name="choix" value="3" />Choix numéro 3
+        <br />
+        <input type="button" name="but" value="Quel est votre choix ?" onClick="choixprop(form3)" />
+        <!--02-->
+    </form>
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
